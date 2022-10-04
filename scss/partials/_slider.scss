@@ -1,0 +1,70 @@
+.slider {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+
+    .imagenesSlide {
+        display: flex;
+        width: 500%;
+        background-image: url(../img/modelo1.jpg);
+        background-size: cover;
+        background-position: 0%;
+        height: 800px;
+        width: 100%;
+        animation: animacion 40s infinite;
+
+        .contenido {
+            position: relative;
+            bottom: -200px;
+            left: 60%;
+            padding: 50px;
+            z-index: 1;
+            max-width: 400px;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 62px;
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 10px;
+            }
+
+            p {
+                margin: 10px 0 0;
+                padding: 0;
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+            }
+        }
+    }
+
+    @keyframes animacion {
+        20% {
+            background-image: url(../img/modelo5.jpg);
+            background-size: cover;
+        }
+    
+        40% {
+            background-image: url(../img/modelo4.jpg);
+            background-size: cover;
+        }
+    
+        60% {
+            background-image: url(../img/modelo3.jpg);
+            background-size: cover;
+        }
+    
+        80% {
+            background-image: url(../img/modelo2.jpg);
+            background-size: cover;
+        }
+    
+        100% {
+            background-image: url(../img/modelo1.jpg);
+            background-size: cover;
+        }
+    }
+}

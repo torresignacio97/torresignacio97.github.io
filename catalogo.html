@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Valparaíso | Catálogo</title>
+    <link rel="icon" href="./img/logo_optica.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://kit.fontawesome.com/50466bd60d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/estilo.css">
+    <script src="./js/scrollreveal.js"></script>
+</head>
+
+<body>
+    <!--Barra superior -->
+
+    <section class="barraSuperior">
+        <div class="barraBusqueda">
+            <input type="search" placeholder="Buscar productos..." required>
+            <div class="btn">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <div class="barraWhatsapp">
+            <p>¡Contactanos por WhatsApp!</p>
+            <div class="iconoWhatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu hamburguesa (mobile) -->
+<!--     <nav class="navbar navbar-dark bg-barraDeWhatsapp" aria-label="First navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand whatsapp" href="#">¡Contactanos por WhatsApp!</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarsExample01">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Turnos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Anteojos recetados</a></li>
+                  <li><a class="dropdown-item" href="#">Lentes de sol</a></li>
+                  <li><a class="dropdown-item" href="#">Lentes de contacto</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav> -->
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <a href="./index.html" class="logotipoOptica">
+        <span>
+          <img src="./img/Logo_optica_terminado.png" alt="Logo" class="logo">
+        </span>
+      </a>
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li class="menu__item">
+            <a href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="menu__item">
+            <a href="./turnos.html">Turnos</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="botonesRedes">
+        <ul>
+          <li class="botonesRrss">
+            <a href="#">
+              <i class="fab fa-facebook-f icon"></i> </a>
+          </li>
+          <li class="botonesRrss">
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+          </li>
+          <li class="botonesRrss">
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+          </li>
+          <li class="botonesRrss">
+            <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  
+
+    <!-- Menubar desplegable (desktop) -->
+    <div class="menu-bar">
+        <ul class="menubarDesplegable">
+            <li class="paginasMenubar"><a href="./anteojos_con_receta.html">ANTEOJOS RECETADOS</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Ejemplo1</a></li>
+                        <li><a href="">Ejemplo2</a></li>
+                        <li><a href="">Ejemplo3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="paginasMenubar"><a href="./anteojos_de_sol.html">LENTES DE SOL</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Ejemplo1</a></li>
+                        <li><a href="">Ejemplo2</a></li>
+                        <li><a href="">Ejemplo3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="paginasMenubar"><a href="./lentes_de_contacto.html">LENTES DE CONTACTO</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Ejemplo1</a></li>
+                        <li><a href="">Ejemplo2</a></li>
+                        <li><a href="">Ejemplo3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="paginasMenubar"><a href="./catalogo.html">MÁS EN EL CATÁLOGO</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Ejemplo1</a></li>
+                        <li><a href="">Ejemplo2</a></li>
+                        <li><a href="">Ejemplo3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="paginasMenubar"><a href="./carga_tu_receta.html">CARGÁ TU RECETA</a></li>
+            <li class="paginasMenubar"><a href="./obras_sociales.html">OBRAS SOCIALES</a></li>
+        </ul>
+    </div>
+
+    <!-- Catálogo -->
+    <section class="catalogo">
+        <div class="categorias">
+            <div class="anteojos-recetados">
+                <div class="categorias-title">
+                    <h4>Anteojos recetados</h4>
+                </div>
+                <div class="marcas">
+                    <ul>
+                        <li><a href="#">Anteojos de titanio</a></li>
+                        <li><a href="#">Anteojos para niños</a></li>
+                        <li><a href="#">Armani</a></li>
+                        <li><a href="#">Ray-Ban</a></li>
+                        <li><a href="#">Rodenstock</a></li>
+                        <li><a href="#">Silhouette</a></li>
+                        <li><a href="#">Vintage</a></li>
+                        <li><a href="#">Vogue</a></li>
+                    </ul>
+                </div>
+                <div class="categorias-title">
+                    <h4>Lentes de contacto</h4>
+                </div>
+                <div class="marcas">
+                    <ul>
+                        <li><a href="#">Convencionales</a></li>
+                        <li><a href="#">Descartables</a></li>
+                        <li><a href="#">Iris print</a></li>
+                        <li><a href="#">Rígidos</a></li>
+                    </ul>
+                </div>
+                <div class="categorias-title">
+                    <h4>Anteojos de sol</h4>
+                </div>
+                <div class="marcas">
+                    <ul>
+                        <li><a href="#">Oakley</a></li>
+                        <li><a href="#">Ray-Ban</a></li>
+                        <li><a href="#">Rusty</a></li>
+                        <li><a href="#">Serengeti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cards-catalogo">
+            <div class="catalogo-titulo">
+                <h1>Catálogo</h1>
+            </div>
+            <div class="resultados">
+                <h5>Mostrando 1-16 de 150 resultados</h5>
+            </div>
+            <div class="ordenar-por">
+                <form action="#">
+                    <select name="ordenar">
+                        <option value="">Ordenar por popularidad</option>
+                        <option value="">Ordenar por los últimos</option>
+                        <option value="">Ordenar por precio: bajo a alto</option>
+                        <option value="">Ordenar por precio: alto a bajo</option>
+                    </select>
+                </form>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 posicion">
+                <div class="col">
+                  <div class="card h-200">
+                    <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-200">
+                    <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-200">
+                    <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-200">
+                    <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-200">
+                      <img src="./img/anteojo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Anteojos recetados</h5>
+                        <p class="card-text">SILHOUETTE TI ACCENT 2906</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <div class="paginas-catalogo">
+                <h5>Siguiente página</h5>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Cards -->
+    <section class="cards-novedades">
+        <h1 class="novedades">Novedades</h1>
+        <div class="container">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/anteojo.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-muted">© 2022</p>
+            </div>
+            <div class="col mb-3">
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
