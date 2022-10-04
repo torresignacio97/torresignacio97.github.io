@@ -1,0 +1,78 @@
+.pagina-contacto {
+    background-image: url(/img/probando_optica.jpg);
+    background-size: cover;
+    background-size: 100vw;
+    height: 700px;
+    background-position-y: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "info1 info2"
+        "info3 info2";
+
+
+    .redes {
+        grid-area: info1;
+        margin: 100px;
+    }
+
+    .informacion {
+        grid-area: info3;
+        margin: 80px;
+        margin-top: -50px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        span {
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    .contacto {
+        grid-area: info2;
+        margin-top: 100px;
+
+        form {
+            width: 450px;
+            margin: auto;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-family: $fontNoto;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+    
+        #boton {
+            background: #0A2472;
+            color: white;
+    
+        }
+    
+        #boton:hover {
+            cursor: pointer;
+        }
+    }
+}
