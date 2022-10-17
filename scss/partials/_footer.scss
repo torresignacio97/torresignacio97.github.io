@@ -1,0 +1,48 @@
+.bg-footer-color {
+    background-color: $azulOscuro;
+}
+
+.logo-footer {
+    width: 80%;
+    margin-left: -10px;
+}
+
+.info1 {
+    position: relative;
+
+    .icono-mail {
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+}
+
+.info2 {
+    position: relative;
+
+    .icono-ubi {
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+}
+
+.info3 {
+    position: relative;
+
+    .icono-tel {
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+}
+
+.info4 {
+    position: relative;
+
+    .icono-horario {
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+}

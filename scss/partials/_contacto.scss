@@ -1,5 +1,7 @@
-.pagina-contacto {
+/* .pagina-contacto {
     background-image: url(/img/probando_optica.jpg);
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
     background-size: cover;
     background-size: 100vw;
     height: 700px;
@@ -15,9 +17,11 @@
         "info3 info2";
 
 
+
     .redes {
         grid-area: info1;
         margin: 100px;
+        color: white;
     }
 
     .informacion {
@@ -27,10 +31,12 @@
 
         h2 {
             margin-bottom: 20px;
+            color: white;
         }
 
         span {
             margin-bottom: 20px;
+            color: white;
         }
         
     }
@@ -49,6 +55,7 @@
         h2 {
             font-family: $fontNoto;
             margin-bottom: 20px;
+            color: white;
         }
 
         input, textarea {
@@ -75,4 +82,46 @@
             cursor: pointer;
         }
     }
+} */
+
+.bg-image {
+    background-image: url(/img/probando_optica.jpg);
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.rrss1 {
+    position: relative;
+
+    .icono-face {
+        position: absolute;
+        left: -20px;
+        top: 3px;
+    }
+}
+
+.rrss2 {
+    position: relative;
+
+    .icono-twitter {
+        position: absolute;
+        left: -25px;
+        top: 3px;
+    }
+}
+
+.rrss3 {
+    position: relative;
+
+    .icono-insta {
+        position: absolute;
+        left: -25px;
+        top: 3px;
+    }
+}
+
+.color-btn {
+    background-color: $colorPrincipal;
 }
