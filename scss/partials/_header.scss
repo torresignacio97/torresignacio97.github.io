@@ -1,5 +1,5 @@
 .encabezado {
-    background-color: #00072D;
+    background-color: $colorPrincipal;
     display: grid;
     padding: 50px;
     height: 100px;
@@ -24,11 +24,12 @@
     .logo {
         width: 140%;
         height: 140%;
+        min-width: 140%;
     }
     
 }
 
-.navbar {
+.navbarra {
     grid-area: item2;
     width: 100%;
     display: flex;

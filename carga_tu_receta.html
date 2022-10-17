@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Óptica Valparaíso | Cargá tu receta</title>
-  <link rel="icon" href="./img/logo_optica.png">
+  <meta name="description" content="Cargá tu receta y te pasamos presupuesto.">
+  <meta name="keywords" content="Optica, Cordoba, Anteojos, Argentina, Lentes de sol, Lentes de coontacto, Promociones">
+    <!-- Style of the plugin -->
+    <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
+  <link rel="icon" href="./img/pestaña-icono.png">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +25,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./scss/estilo.css">
   <script src="./js/scrollreveal.js"></script>
+
+
 </head>
 
 <body>
@@ -29,50 +36,56 @@
     <div class="barraBusqueda">
       <input type="search" placeholder="Buscar productos..." required>
       <div class="btn">
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search icono-lupa"></i>
       </div>
     </div>
-    <div class="barraWhatsapp">
-      <p>¡Contactanos por WhatsApp!</p>
-      <div class="iconoWhatsapp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
+    </div>
     </div>
   </section>
 
   <!-- Menu hamburguesa (mobile) -->
-<!--   <nav class="navbar navbar-dark bg-barraDeWhatsapp" aria-label="First navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand whatsapp" href="#">¡Contactanos por WhatsApp!</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarsExample01">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Turnos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Anteojos recetados</a></li>
-              <li><a class="dropdown-item" href="#">Lentes de sol</a></li>
-              <li><a class="dropdown-item" href="#">Lentes de contacto</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
+  <div class="menu-hamburguesa">
+    <nav class="navbar navbar-dark bg-barraDeWhatsapp" aria-label="First navbar example">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-xs-10 ms-3 ms-md-5 mb-5 p-2">
+            <a href="./index.html">
+              <img src="./img/Logo_optica_terminado.png" alt="logo" class="logo-hamb">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-2">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 20px;" aria-current="page" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 20px;" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 20px;" href="https://api.whatsapp.com/send?phone=+5493511234567">Turnos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-size: 20px;" href="#" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="font-size: 20px;" href="./anteojos_con_receta.html">Anteojos recetados</a></li>
+                <li><a class="dropdown-item" style="font-size: 20px;" href="./anteojos_de_sol.html">Lentes de sol</a></li>
+                <li><a class="dropdown-item" style="font-size: 20px;" href="./lentes_de_contacto.html">Lentes de contacto</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+          </form>
+        </div>
       </div>
-    </div>
-  </nav> -->
+    </nav>
+  </div>
 
   <!-- Encabezado -->
   <header class="encabezado">
@@ -81,7 +94,7 @@
         <img src="./img/Logo_optica_terminado.png" alt="Logo" class="logo">
       </span>
     </a>
-    <nav class="navbar">
+    <nav class="navbarra">
       <ul class="menu">
         <li class="menu__item">
           <a href="./contacto.html">Contacto</a>
@@ -90,28 +103,29 @@
           <a href="./nosotros.html">Nosotros</a>
         </li>
         <li class="menu__item">
-          <a href="./turnos.html">Turnos</a>
+          <a href="https://api.whatsapp.com/send?phone=+5493511234567">Turnos</a>
         </li>
       </ul>
     </nav>
     <div class="botonesRedes">
       <ul>
         <li class="botonesRrss">
-          <a href="#">
+          <a href="https://www.facebook.com/">
             <i class="fab fa-facebook-f icon"></i> </a>
         </li>
         <li class="botonesRrss">
-          <a href="#"><i class="fab fa-twitter icon"></i></a>
+          <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter icon"></i></a>
         </li>
         <li class="botonesRrss">
-          <a href="#"><i class="fab fa-instagram icon"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram icon"></i></a>
         </li>
         <li class="botonesRrss">
-          <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+          <a href="https://workspace.google.com/intl/es-419/products/gmail/?utm_source=google&utm_medium=cpc&utm_campaign=latam-AR-all-es-dr-bkws-all-all-trial-e-dr-1011272-LUAC0011865&utm_content=text-ad-none-any-DEV_c-CRE_471087538708-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Gmail-KWID_43700057701729742-kwd-329871267&utm_term=KW_gmail-ST_gmail&gclid=EAIaIQobChMI1aLz4M3m-gIVDtORCh0wIQdkEAAYASAAEgJFrPD_BwE&gclsrc=aw.ds"><i class="fab fa-google-plus-g icon"></i></a>
         </li>
       </ul>
     </div>
   </header>
+  </div>
 
 
   <!-- Menubar desplegable (desktop) -->
@@ -120,36 +134,43 @@
       <li class="paginasMenubar"><a href="./anteojos_con_receta.html">ANTEOJOS RECETADOS</a>
         <div class="sub-menu">
           <ul>
-            <li><a href="">Ejemplo1</a></li>
-            <li><a href="">Ejemplo2</a></li>
-            <li><a href="">Ejemplo3</a></li>
+            <li><a href="./catalogo.html">Anteojos de titanio</a></li>
+            <li><a href="./catalogo.html">Anteojos para niños</a></li>
+            <li><a href="./catalogo.html">Armani</a></li>
+            <li><a href="./catalogo.html">Ray-Ban</a></li>
+            <li><a href="./catalogo.html">Rodenstock</a></li>
+            <li><a href="./catalogo.html">Silhouette</a></li>
+            <li><a href="./catalogo.html">Vintage</a></li>
+            <li><a href="./catalogo.html">Vogue</a></li>
           </ul>
         </div>
       </li>
       <li class="paginasMenubar"><a href="./anteojos_de_sol.html">LENTES DE SOL</a>
         <div class="sub-menu">
           <ul>
-            <li><a href="">Ejemplo1</a></li>
-            <li><a href="">Ejemplo2</a></li>
-            <li><a href="">Ejemplo3</a></li>
+            <li><a href="./anteojos_de_sol.html">Oakley</a></li>
+            <li><a href="./anteojos_de_sol.html">Ray-Ban</a></li>
+            <li><a href="./anteojos_de_sol.html">Rusty</a></li>
+            <li><a href="./anteojos_de_sol.html">Serengeti</a></li>
           </ul>
         </div>
       </li>
       <li class="paginasMenubar"><a href="./lentes_de_contacto.html">LENTES DE CONTACTO</a>
         <div class="sub-menu">
           <ul>
-            <li><a href="">Ejemplo1</a></li>
-            <li><a href="">Ejemplo2</a></li>
-            <li><a href="">Ejemplo3</a></li>
+            <li><a href="./lentes_de_contacto.html">Convencionales</a></li>
+            <li><a href="./lentes_de_contacto.html">Descartables</a></li>
+            <li><a href="./lentes_de_contacto.html">Iris print</a></li>
+            <li><a href="./lentes_de_contacto.html">Rígidos</a></li>
           </ul>
         </div>
       </li>
       <li class="paginasMenubar"><a href="./catalogo.html">MÁS EN EL CATÁLOGO</a>
         <div class="sub-menu">
           <ul>
-            <li><a href="">Ejemplo1</a></li>
-            <li><a href="">Ejemplo2</a></li>
-            <li><a href="">Ejemplo3</a></li>
+            <li><a href="./catalogo.html">Cristales y lentes</a></li>
+            <li><a href="./catalogo.html">Lo más vendido</a></li>
+            <li><a href="./catalogo.html">Colección 2022</a></li>
           </ul>
         </div>
       </li>
@@ -160,35 +181,68 @@
 
   <!-- Texto -->
   <div class="imagen-fondo">
-      <h1>CARGÁ TU RECETA</h1>
-      <p>Para tu mayor comodidad te podemos pasar un presupuesto por mail! Solo necesitas completar los datos del formulario.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 offset-3">
+            <div class="col-12 text-center w-50 d-flex justify-content-center">
+              <h1>CARGÁ TU RECETA</h1>
+            </div>
+            <div class="col-12 text-center w-50 text-white">
+              <h4>Para tu mayor comodidad te podemos pasar un presupuesto por mail! Solo necesitas completar los datos del formulario.</h4>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <!-- Formulario -->
-  <div class="carga-tu-receta">
-    <form action="">
-      <h2>Cargá tu receta</h2>
-      <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido">
-      <input type="text" name="E-mail" placeholder="E-mail">
-      <input type="text" name="Telefono" placeholder="Teléfono">
-      <textarea name="mensaje" placeholder="Especificaciones/aclaraciones"></textarea>
-      <input type="file" class="elegir-archivo">
-      <input type="button" value="Enviar" id="boton">
-    </form>
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-6 col-lg-5 offset-lg-3 offset-md-3 contacto-reveal">
+      <p class="h2 mb-5 ms-lg-5 text-center">Cargá tu receta</p>
+      <div class="mb-4 ms-lg-5">
+        <label for="nombreInput" class="form-label">Nombre y apellido</label>
+        <input id="nombreInput" class="form-control" type="text" placeholder="Escribí tu nombre y apellido">
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <label for="emailInput" class="form-label">E-mail</label>
+        <input id="emailInput" class="form-control" type="email" placeholder="Escribí tu e-mail">
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <label for="telInput" class="form-label">Teléfono / Celular</label>
+        <input id="telInput" class="form-control" type="text" placeholder="Escribí tu teléfono">
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <label for="mensajeId" class="form-label">Especificaciones / aclaraciones</label>
+        <textarea id="mensajeId" class="form-control" placeholder="Escribí tu mensaje"></textarea>
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <label for="archivoInput" class="form-label"></label>
+        <input id="archivoInput" class="form-control" type="file">
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <input type="button" class="form-control text-white color-btn" value="Enviar">
+      </div>
+    </div>
   </div>
+
   
-
-
   <!-- Cards -->
   <section class="cards-novedades">
-    <h1 class="novedades">Novedades</h1>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="novedades">Novedades</h1>
+      </div>
+    </div>
     <div class="container">
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <div class="img-cards">
+              <img src="./img/anteojo-3.jpg" alt="Anteojo">
+            </div>
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -197,12 +251,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/ray-ban-1.jpg" alt="Anteojo">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -211,12 +265,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/ray-ban-2.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -225,12 +279,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/armani-1.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -239,12 +293,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/armani-2.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -253,12 +307,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/silhouette-1.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -267,12 +321,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/silhouette-2.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -281,12 +335,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/anteojo-2.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -295,12 +349,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./img/anteojo.jpg" alt="">
+            <img src="./img/anteojo-1.jpg" alt="">
             <div class="card-description">
               <div class="card-title">
                 <h4>Descripción</h4>
@@ -309,7 +363,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
               </div>
               <div class="card-link">
-                <a href="#">Ver detalles</a>
+                <a href="./detalles.html">Ver detalles</a>
               </div>
             </div>
           </div>
@@ -318,55 +372,189 @@
     </div>
   </section>
 
+
   <!-- Footer -->
-  <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <p class="text-muted">© 2022</p>
+
+  <div class="container-fluid">
+    <footer class="row p-5 pb-2 bg-footer-color text-white">
+      <div class="col-xs-12 col-md-6 col-lg-3 m-xs-footer">
+        <img src="./img/Logo_optica_terminado.png" alt="logo" class="logo-footer mb-4">
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./nosotros.html">Nosotros</a>
+        </div>
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./contacto.html">Contacto</a>
+        </div>
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./catalogo.html">Novedades</a>
+        </div>
       </div>
-      <div class="col mb-3">
+      <div class="col-xs-12 col-md-6 col-lg-3 m-xs-footer">
+        <p class="h2 mb-5 ms-4">Categorías</p>
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./catalogo.html">Anteojos con receta</a>
+        </div>
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./anteojos_de_sol.html">Anteojos de sol</a>
+        </div>
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./lentes_de_contacto.html">Lentes de contacto</a>
+        </div>
+        <div class="mb-4 ms-4">
+          <a class="text-white text-decoration-none" href="./catalogo.html">Promociones y descuentos</a>
+        </div>
       </div>
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
+      <div class="col-xs-12 col-md-6 col-lg-3 m-xs-footer">
+        <p class="h2 mb-5 ms-4">Información</p>
+        <div class="mb-4 ms-5 info1">
+          <i class="fa-solid fa-envelope icono-mail"></i>
+          <p class="text-white">opticavalparaiso@gmail.com</p>
+        </div>
+        <div class="mb-4 ms-5 info2">
+          <i class="fa-solid fa-location-dot icono-ubi"></i>
+          <p class="text-white">Valparaíso 3081, Córdoba, Argentina</p>
+        </div>
+        <div class="mb-4 ms-5 info3">
+          <i class="fa-solid fa-phone icono-tel"></i>
+          <p class="text-white">(351) 461-1234</p>
+        </div>
+        <div class="mb-4 ms-5 info4">
+          <i class="fa-solid fa-clock icono-horario"></i>
+          <p class="text-white">Lun. a Vie. de 9 a 18 hs. Sáb. de 9 a 13hs.</p>
+        </div>
       </div>
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
+      <div class="col-xs-12 col-md-6 col-lg-3 m-xs-footer">
+        <p class="h2 mb-3 ms-4">Dirección</p>
+        <div class="mb-4 ms-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.2295906644235!2d-64.18707602382226!3d-31.447618597834918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2fbabcad389%3A0xe77dbd58c5279e4f!2sAv.%20Cdad.%20de%20Valpara%C3%ADso%203081%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1664955289805!5m2!1ses-419!2sar"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="m-xs-maps"></iframe>
+        </div>
       </div>
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
+      <div class="container text-center p-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 offset-lg-3">
+            <h5 class="text-uppercase">MEDIOS DE PAGO</h5>
+            <ul class="list-unstyled mb-4">
+              <li>
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/visa@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/visa@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="visa" width="48" height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mastercard@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mastercard@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="mastercard" width="48"
+                  height="30"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/amex@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/amex@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="amex" width="48" height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/diners@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/diners@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="diners" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/banelco@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/banelco@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="ar_banelco" width="48"
+                  height="30"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cabal@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cabal@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="ar_cabal" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-naranja@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-naranja@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="ar_tarjeta-naranja" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-shopping@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-shopping@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="ar_tarjeta-shopping" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mercadopago@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mercadopago@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="mercadopago" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/argencard@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/argencard@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="ar_argencard" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cencosud@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cencosud@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="ar_cencosud" width="48"
+                  height="30"><img
+                  src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/pagofacil@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/pagofacil@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="pagofacil" width="48"
+                  height="30"><img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/rapipago@2x.png"
+                  data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/rapipago@2x.png"
+                  class="js-lazy-loading footer-payship-img lazyloaded mb-1 me-1" alt="rapipago" width="48" height="30">
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">DATA FISCAL</h5>
+            <ul class="list-unstyled mb-4">
+              <li>
+                <div class="afip m-top-quarter m-bottom-quarter">
+                  <a target="_F960AFIPInfo">
+                    <img src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" width="60px" border="0"
+                      alt="Logo de AFIP"></a>
+                </div>
+            </ul>
+          </div>
+          <div class="col-xs-12 pt-4">
+            <p class="text-white text-center">Óptica Valparaíso © 2022 All Rights Reserved</p>
+          </div>
     </footer>
   </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/app.js"></script>
+
+      <!-- Button Whatsapp Structure -->
+      <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_button_label">
+                Contactanos
+            </div>  
+        <div class="wcs_button wcs_button_circle">
+            <span class="fa fa-whatsapp"></span>
+        </div>  
+     
+        <div class="wcs_popup">
+            <div class="wcs_popup_close">
+                <span class="fa fa-close"></span>
+            </div>
+            <div class="wcs_popup_header">
+                <span class="fa fa-whatsapp"></span>
+                <strong>Servicio al cliente</strong>
+                
+                <div class="wcs_popup_header_description">¿Alguna consulta? Chateá con nosotros por Whatsapp</div>
+    
+            </div>  
+            <div class="wcs_popup_input" 
+                data-number="3511234567"
+                data-availability='{ "monday":"09:00-18:00", "tuesday":"09:00-18:00", "wednesday":"09:00-18:00", "thursday":"09:00-18:00", "friday":"09:00-18:00", "saturday":"09:00-13:00" }'>
+                <input type="text" placeholder="Escribir pregunta!" />
+                <i class="fa fa-play"></i>
+            </div>
+            <div class="wcs_popup_avatar">
+                <img src="./img/apoyo.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    
+        <!-- jQuery 1.8+ -->
+    <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+        <!-- Plugin JS file -->
+    <script src="plugin/components/moment/moment.min.js"></script>
+    <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+    <script src="plugin/whatsapp-chat-support.js"></script>
+    <script>
+       $('#button-w').whatsappChatSupport({
+            defaultMsg : '',
+        });
+    </script>
 </body>
 
 </html>

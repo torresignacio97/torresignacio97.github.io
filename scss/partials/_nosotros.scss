@@ -1,34 +1,27 @@
-.pagina-nosotros {
-    background-image: url(/img/probando_optica.jpg);
-    background-size: cover;
-    background-size: 100vw;
-    height: 700px;
-    background-position-y: center;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "info1 info2"
-        "info1 info2";
 
-    .obras-sociales {
-        grid-area: info1;
-        margin: 100px;
-    }
+.bg-color {
+    background-color: $colorPrincipal;
+}
 
-    .nosotros {
-        grid-area: info2;
-        margin-top: 100px;
+.obras-sociales {
 
-        h1 {
-
-        }
-
-        p {
-            width: 450px;
-        }
+    li {
+        color: white;
+        margin-bottom: 10px;
     }
 }
+
+.titulo-logo-nosotros{
+
+    .logo-nosotros {
+        width: 10%;
+        margin-left: 45px;
+    }
+    
+    .titulo-nosotros {
+        width: 40%;
+        margin-left: 20px;
+        padding-bottom: 5px;
+    }
+}
+

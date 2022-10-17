@@ -3,183 +3,583 @@
 @import "./partials/barra-whatsapp";
 @import "./partials/barra-superior";
 @import "./partials/header";
+@import "partials/menu-hamburguesa";
 @import "./partials/menubar-desplegable";
 @import "./partials/slider";
 @import "./partials/catalogo";
 @import "./partials/carga-tu-receta";
 @import "./partials/contacto";
 @import "./partials/nosotros";
+@import "./partials/detalles";
 @import "./partials/cards";
 @import "./partials/footer";
 
 /* Media queries*/
 
-@media screen and (max-width: 576px) {
+@media (min-width: 1560px) and (max-width: 1720px){
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "item1 item2"
+            "item1 item2";
+        margin: 120px;
+        padding: 20px;
+        height: 1300px;
+    
+        .categorias {
+            grid-area: item1;
+            border-right: 1px solid gray;
+            width: 15rem;
+            margin-left: 20px;
+            margin-top: -20px;
+    
+            .categorias-title {
+                margin-bottom: 35px;
+    
+                h4 {
+                    font-size: 17px;
+                }
+            }
+    
+            .marcas li {
+                list-style: none;
+                margin-left: -25px;
+                margin-bottom: 10px;
+            }
+    
+            .marcas a {
+                font-size: 15px;
+            }
+        }
+    
+        .cards-catalogo {
+            grid-area: item2;
+        }
+    
+        .cards-catalogo {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "fila1 fila1"
+                "fila2 fila3"
+                "fila4 fila4"
+                "fila5 fila5";
+            width: 150%;
+    
+            .posicion {
+                grid-area: fila4;
+                margin-top: -8rem;
+                margin-left: -150px;
+                width: 110%;
+                min-width: 700px;
+    
+            }
+    
+            .catalogo-titulo {
+                grid-area: fila1;
+                margin-left: -120px;
+                margin-top: -100px;
+                letter-spacing: 5px;
+                height: 50px;
+                width: 400px;
+                margin-bottom: 160px;
+            }
+    
+            .resultados {
+                grid-area: fila2;
+                margin-top: -9rem;
+                margin-left: -120px;
+                height: 30px;
+                width: 400px;
+    
+                h5 {
+                    font-size: 15px;
+                }
+            }
+    
+            .ordenar-por {
+                grid-area: fila3;
+                margin-top: -10rem;
+                height: 30px;
+                margin-left: -290px;
+    
+                option {
+                    font-size: 15px;
+                }
+            }
+    
+            .paginas-catalogo {
+                margin-top: 5rem;
+                margin-left: 90%;
+                height: 50px;
+                width: 200px;
+    
+                a {
+                    width: 200px;
+                }
+    
+                h5 {
+                    font-size: 16px;
+                    width: 200px;
+                }
+            }
+        }
+    
+    
+    /*     .card {
+            width: 80%;
+        } */
+    }
+    
+}
+
+@media screen and (max-width: 1560px) {
     .encabezado {
-        display: flex;
-        width: 100%;
-        height: 300px;
-        background-color: #001C55 ;
+        position: relative;
+
+        .navbarra {
+            position: relative;
+            margin-top: 15px;
+            right: 22%;
+
+            .menu {
+                position: absolute;
+                gap: 50px;
+
+            }
+
+        }
+
+        .botonesRedes {
+            position: absolute;
+            right: -20%;
+
+            .botonesRrss {
+                padding: 1px;
+            }
+
+            ul li a {
+                margin: 0px 5px;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1560px) {
+
+    .menu-bar {
+
+        ul li:hover .sub-menu {
+            margin-left: 10px;
+
+            ul li {
+                width: 170px;
+            }
+        }
     }
 
-    .logotipoOptica {
-        gap: 1rem;
-        margin-left: 10px;
+    .menubarDesplegable {
+
+        .paginasMenubar {
+            margin-left: -35px;
+        }
     }
-    
-    .logo {
-        width: 90%;
-        height: 50px;
-    }
-    
-    .encabezadoTitulo {
-        font-size: 40px;
-        color: white;
-    }
-    
-    .menu {
+
+    .catalogo {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
-        width: 100%;
-        height: 100%;
-        margin-left: 130px;
-        margin-top: 30px;
-        justify-content: center;
-    }
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "item1 item2"
+            "item1 item2";
+        margin: 120px;
+        padding: 20px;
+        height: 1300px;
     
-    li {
-        color: white;
-    }
+        .categorias {
+            grid-area: item1;
+            border-right: 1px solid gray;
+            width: 15rem;
+            margin-left: -100px;
+            margin-top: -20px;
     
-    .navbar {
-        flex-direction: row;
-        margin-left: -850px;
+            .categorias-title {
+                margin-bottom: 35px;
+    
+                h4 {
+                    font-size: 17px;
+                }
+            }
+    
+            .marcas li {
+                list-style: none;
+                margin-left: -25px;
+                margin-bottom: 10px;
+            }
+    
+            .marcas a {
+                font-size: 15px;
+            }
+        }
+    
+        .cards-catalogo {
+            grid-area: item2;
+        }
+    
+        .cards-catalogo {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "fila1 fila1"
+                "fila2 fila3"
+                "fila4 fila4"
+                "fila5 fila5";
+            width: 190%;
+    
+            .posicion {
+                grid-area: fila4;
+                margin-top: -8rem;
+                margin-left: -220px;
+                width: 110%;
+                min-width: 700px;
+    
+            }
+    
+            .catalogo-titulo {
+                grid-area: fila1;
+                margin-left: -120px;
+                margin-top: -100px;
+                letter-spacing: 5px;
+                height: 50px;
+                width: 400px;
+                margin-bottom: 160px;
+            }
+    
+            .resultados {
+                grid-area: fila2;
+                margin-top: -9rem;
+                margin-left: -120px;
+                height: 30px;
+                width: 400px;
+    
+                h5 {
+                    font-size: 15px;
+                }
+            }
+    
+            .ordenar-por {
+                grid-area: fila3;
+                margin-top: -10rem;
+                height: 30px;
+                margin-left: -390px;
+    
+                option {
+                    font-size: 15px;
+                }
+            }
+    
+            .paginas-catalogo {
+                margin-top: 5rem;
+                margin-left: 90%;
+                height: 50px;
+                width: 200px;
+    
+                a {
+                    width: 200px;
+                }
+    
+                h5 {
+                    font-size: 16px;
+                    width: 200px;
+                }
+            }
+        }
+    
+    
+    /*     .card {
+            width: 80%;
+        } */
     }
 
-    .navbar a {
-        color: white;
+}
+
+@media screen and (max-width: 1280px){
+
+    .detalles {
+        .card-detalles {
+            width: 300%;
+        }
+    }
+    
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    .encabezado {
+        position: relative;
+
+        .navbarra {
+            position: relative;
+            margin-top: 15px;
+            right: 10%;
+
+            .menu {
+                position: absolute;
+                gap: 20px;
+
+            }
+
+        }
+
+        .logotipoOptica {
+            position: relative;
+
+
+            .logo {
+                position: absolute;
+                width: 200%;
+                height: 140%;
+                right: 60px;
+                top: -10px;
+            }
+        }
+
+        .botonesRedes {
+            position: absolute;
+            right: -70%;
+
+            .botonesRrss {
+                padding: 1px;
+            }
+
+            ul li a {
+                margin: 0px 2px;
+            }
+
+        }
     }
 
     .menu-bar {
-        display: none;
+
+        ul li:hover .sub-menu {
+            margin-left: 20px;
+
+            ul li {
+                width: 150px;
+            }
+        }
     }
 
-    .menu-bar {
-        display: none;
+    .menubarDesplegable {
+
+        .paginasMenubar {
+            margin-left: -55px;
+        }
     }
 
-    /* Imagen principal */
-    .imagenPrincipal {
-        height: 500px;
-    }
-
-    /* Cards */
-    .novedades {
-        font-size: 25px;
-        right: 35%;
-    }
-    
-    .card {
+    .catalogo {
         display: grid;
-        width: 100%;
-    }
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "item1 item2"
+            "item1 item2";
+        margin: 120px;
+        padding: 20px;
+        height: 1300px;
     
-    .cards {
-        padding: 80px;
-        background-color: #A6E1FA;
-        display: grid;
-        gap: 50px;
-    }
+        .categorias {
+            grid-area: item1;
+            border-right: 1px solid gray;
+            width: 200px;
+            margin-left: -120px;
+            margin-top: -20px;
     
-    .card__imagen {
-        width: 100%;
-        height: 100%;
-    }
+            .categorias-title {
+                margin-bottom: 35px;
     
-    .card__div {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+                h4 {
+                    font-size: 17px;
+                }
+            }
     
-    .card__titulo {
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-    }
+            .marcas li {
+                list-style: none;
+                margin-left: -25px;
+                margin-bottom: 10px;
+            }
     
-    .card__descripcion {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 11px;
-    }
+            .marcas a {
+                font-size: 15px;
+            }
+        }
     
-    .card__boton {
-        background-color: aliceblue;
-        display: flex;
-        width: 0px;
-        height: 0px;
-        border-radius: 0px;
-        line-height: 0px;
-        text-align: none;
-        margin-left: 0px;
+        .cards-catalogo {
+            grid-area: item2;
+        }
+    
+        .cards-catalogo {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "fila1 fila1"
+                "fila2 fila3"
+                "fila4 fila4"
+                "fila5 fila5";
+            width: 150%;
+    
+            .posicion {
+                grid-area: fila4;
+                margin-top: -8rem;
+                margin-left: -20px;
+                width: 110%;
+                min-width: 700px;
+    
+            }
+    
+            .catalogo-titulo {
+                grid-area: fila1;
+                margin-left: 10px;
+                margin-top: -100px;
+                letter-spacing: 5px;
+                height: 50px;
+                width: 400px;
+                margin-bottom: 160px;
+            }
+    
+            .resultados {
+                grid-area: fila2;
+                margin-top: -9rem;
+                margin-left: 10px;
+                height: 30px;
+                width: 400px;
+    
+                h5 {
+                    font-size: 15px;
+                }
+            }
+    
+            .ordenar-por {
+                grid-area: fila3;
+                margin-top: -10rem;
+                height: 30px;
+                margin-left: -290px;
+    
+                option {
+                    font-size: 15px;
+                }
+            }
+    
+            .paginas-catalogo {
+                margin-top: 5rem;
+                margin-left: 90%;
+                height: 50px;
+                width: 200px;
+    
+                a {
+                    width: 200px;
+                }
+    
+                h5 {
+                    font-size: 16px;
+                    width: 200px;
+                }
+            }
+        }
+    
+    
+    /*     .card {
+            width: 80%;
+        } */
+    }
+
+    .detalles {
+
+        .img-detalles {
+            width: 120%;
+            margin-left: -120px;
+        }
+
+        .mg-descripcion-titulo {
+            margin-left: -100px;
+        }
+
+        .mg-productos {
+            margin-left: -100px;
+        }
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1110px) {
+    .catalogo {
+
+        .cards-catalogo {
+            width: 170%;
+        }
+
+        .ocultar-2 {
+            display: none;
+        }
+
+
+        .paginas-catalogo {
+            margin-top: 5rem;
+            margin-right: 90%;
+            height: 50px;
+            width: 200px;
+
+            a {
+                width: 200px;
+            }
+
+            h5 {
+                font-size: 16px;
+                width: 200px;
+            }
+        }
     }
 }
 
 
-@media (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 992px) {
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 992px) {
     /* Encabezado*/
+
     .encabezado {
-        display: flex;
-        width: 100%;
-        height: 300px;
-        background-color: #001C55 ;
+        display: none;
     }
 
-    .logotipoOptica {
-        gap: 1rem;
-        margin-left: 250px;
-    }
-    
-    .logo {
-        width: 90%;
-        height: 50px;
-    }
-    
-    .encabezadoTitulo {
-        font-size: 40px;
-        color: white;
-    }
-    
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
-        width: 100%;
-        height: 100%;
-        margin-left: 130px;
-        margin-top: 30px;
-        justify-content: center;
-    }
-    
-    li {
-        color: white;
-    }
-    
-    .navbar {
-        flex-direction: row;
-        margin-left: -850px;
-    }
-
-    .navbar a {
-        color: white;
+    .barraSuperior {
+        display: none;
     }
 
     .menu-bar {
         display: none;
+    }
+
+    .slider {
+
+        .imagenesSlide {
+            .contenido {
+                left: 45%;
+            }
+
+        }
     }
 
     /* Imagen principal */
@@ -187,9 +587,445 @@
         height: 500px;
     }
 
-    /* Cards */
-    .novedades {
-        font-size: 25px;
-        right: 35%;
+    .titulo-logo-nosotros {
+        min-width: 180%;
+
+        .logo-nosotros {
+            width: 10%;
+            margin-left: 25px;
+        }
+
+        .titulo-nosotros {
+            width: 40%;
+            margin-left: 0px;
+            padding-bottom: 5px;
+        }
     }
+
+    .categorias {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .catalogo {
+        .ocultar-3 {
+            display: none;
+        }
+
+    }
+
+    .detalles {
+
+        .ocultar-detalles{
+            display: none;
+        }
+
+        .img-detalles {
+            width: 200%;
+            margin-left: -120px;
+        }
+
+        .mg-descripcion-titulo {
+            margin-left: -100px;
+        }
+
+        .mg-productos {
+            margin-left: 220px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .slider {
+
+        .imagenesSlide {
+            .contenido {
+                left: 35%;
+            }
+
+        }
+    }
+
+    .catalogo {
+        
+
+        .posicion {
+            padding-right: 160px;
+        }
+
+        .card {
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .cards-novedades {
+
+        .novedades {
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 600px;
+
+            .swiper {
+                width: 80%;
+
+            }
+        }
+
+    }
+
+    .catalogo {
+
+        .ocultar-4 {
+            display: none;
+        }
+
+        .cards-catalogo {
+            width: 170%;
+        }
+    }
+
+    .imagen-fondo {
+        background-position-x: 50%;
+    }
+
+    .detalles {
+        .img-detalles {
+            width: 160%;
+            margin-left: -120px;
+        }
+
+        .mg-descripcion-titulo {
+            margin-left: -100px;
+        }
+
+        .mg-productos {
+            margin-left: 100px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .cards-novedades {
+
+        .novedades {
+            margin: 25px;
+        }
+
+        .container {
+            width: 250px;
+
+            .swiper {
+                width: 110%;
+
+            }
+        }
+    }
+
+    .m-xs-rrss {
+        margin-left: 25px;
+    }
+
+    .m-xs-footer {
+        margin-left: -40px;
+    }
+
+    .m-xs-maps {
+        margin-left: -20px;
+    }
+
+    .slider {
+
+        .imagenesSlide {
+            .contenido {
+                bottom: -100px;
+                left: 0%;
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+
+    .titulo-logo-nosotros {
+        min-width: 180%;
+
+        .logo-nosotros {
+            width: 10%;
+            margin-left: 25px;
+        }
+
+        .titulo-nosotros {
+            width: 40%;
+            margin-left: 0px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "item1 item2"
+            "item1 item2";
+        margin: 120px;
+        padding: 20px;
+        height: 1300px;
+
+        .categorias {
+            grid-area: item1;
+            border-right: 1px solid gray;
+            width: 20rem;
+            margin-left: 20px;
+            margin-top: -20px;
+            display: none;
+
+            .categorias-title {
+                margin-bottom: 25px;
+
+                h4 {
+                    font-size: 17px;
+                }
+            }
+
+            .marcas li {
+                list-style: none;
+                margin-left: -25px;
+                margin-bottom: 10px;
+            }
+
+            .marcas a {
+                font-size: 15px;
+            }
+        }
+
+        .cards-catalogo {
+            grid-area: item2;
+        }
+
+        .cards-catalogo {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "fila1 fila1"
+                "fila2 fila3"
+                "fila4 fila4"
+                "fila5 fila5";
+            width: 150%;
+
+            .posicion {
+                grid-area: fila4;
+                margin-top: -8rem;
+                margin-left: -135px;
+                width: 110%;
+                min-width: 700px;
+            }
+
+            .catalogo-titulo {
+                grid-area: fila1;
+                margin-left: -110px;
+                margin-top: -100px;
+                letter-spacing: 5px;
+                height: 50px;
+                width: 400px;
+            }
+
+            .resultados {
+                grid-area: fila2;
+                margin-top: -150px;
+                margin-left: -110px;
+                height: 30px;
+                width: 400px;
+
+                h5 {
+                    font-size: 15px;
+                }
+            }
+
+            .ordenar-por {
+                grid-area: fila3;
+                margin-top: -7rem;
+                height: 30px;
+                width: 100px;
+                margin-left: -150px;
+
+                option {
+                    font-size: 15px;
+                }
+            }
+
+            .paginas-catalogo {
+                margin-top: 5rem;
+                margin-left: 0%;
+                height: 50px;
+                width: 200px;
+
+                a {
+                    width: 200px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                    width: 200px;
+                }
+            }
+        }
+
+
+        .card {
+            width: 110%;
+        }
+
+        .ocultar {
+            display: none;
+        }
+    }
+
+    .imagen-fondo {
+        background-position-x: 60%;
+    }
+
+    .detalles {
+        .img-detalles {
+            width: 150%;
+            margin-left: -120px;
+        }
+
+        .mg-descripcion-titulo {
+            margin-left: -100px;
+        }
+
+        .mg-productos {
+            margin-left: -80px;
+        }
+    }
+
+
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+    
+    .catalogo {
+
+    height: 1800px;
+
+        .card {
+            width: 160%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .encabezado {
+        display: none;
+    }
+
+    .barraSuperior {
+        display: none;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+
+        img {
+            margin-top: 12px;
+        }
+    }
+
+    .slider {
+
+        height: 540px;
+
+        .imagenesSlide {
+            background-size: 300%;
+            background-position: 22% -50%;
+
+            .contenido {
+                left: 0%;
+
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+
+    @keyframes animacion {
+        20% {
+            background-image: url(../img/modelo5.jpg);
+            background-size: 300%;
+        }
+
+        40% {
+            background-image: url(../img/modelo4.jpg);
+            background-size: 300%;
+        }
+
+        60% {
+            background-image: url(../img/modelo3.jpg);
+            background-size: 300%;
+        }
+
+        80% {
+            background-image: url(../img/modelo2.jpg);
+            background-size: 300%;
+            background-position: 60% -60%;
+        }
+
+        100% {
+            background-image: url(../img/modelo1.jpg);
+            background-size: 300%;
+        }
+    }
+
+
+    .imagenPrincipal {
+        height: 500px;
+    }
+
+    .w-75 {
+        width: 100%;
+    }
+
+    .catalogo {
+        height: 1300px;
+
+    }
+
+    .imagen-fondo {
+        background-position-x: 70%;
+    }
+
+
 }
